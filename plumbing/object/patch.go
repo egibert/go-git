@@ -284,9 +284,12 @@ func printStat(fileStats []FileStat) string {
 	}
 
 	finalOutput := ""
+	fmt.Println("Hi from the custom GO")
 	for _, fs := range fileStats {
 		addn := float64(fs.Addition)
 		deln := float64(fs.Deletion)
+		fmt.Printf("Addn %f\n", addn)
+		fmt.Printf("Deln %f\n", deln)
 		adds := strings.Repeat("+", int(math.Floor(addn/scaleFactor)))
 		dels := strings.Repeat("-", int(math.Floor(deln/scaleFactor)))
 		finalOutput += fmt.Sprintf(" %s | %d %s%s\n", fs.Name, (fs.Addition + fs.Deletion), adds, dels)
