@@ -1,4 +1,4 @@
-module github.com/egibert/go-git/v5
+module github.com/egibert/go-git/v8
 
 go 1.16
 
@@ -10,7 +10,7 @@ require (
 	github.com/go-git/gcfg v1.5.0
 	github.com/go-git/go-billy/v5 v5.2.0
 	github.com/go-git/go-git-fixtures/v4 v4.1.0
-	github.com/egibert/go-git/v5 v5.3.9
+	github.com/go-git/go-git/v5 v5.3.0
 	github.com/google/go-cmp v0.5.5
 	github.com/imdario/mergo v0.3.12
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
@@ -25,3 +25,5 @@ require (
 	golang.org/x/text v0.3.6
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 )
+
+replace github.com/go-git/go-git/v5 => github.com/egibert/go-git/v5 v5.3.9
