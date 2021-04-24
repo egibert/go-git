@@ -4,6 +4,7 @@
 // majority of the plumbing read operations and some of the main write
 // operations, but lacks the main porcelain operations such as merges.
 //
+//
 // It is highly extensible, we have been following the open/close principle in
 // its design to facilitate extensions, mainly focusing the efforts on the
 // persistence of the objects.
