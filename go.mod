@@ -1,4 +1,4 @@
-module github.com/egibert/go-git/v6
+module github.com/egibert/go-git/v5
 
 go 1.16
 
