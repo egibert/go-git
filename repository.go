@@ -386,6 +386,7 @@ func dotGitCommonDirectory(fs billy.Filesystem) (commonDir billy.Filesystem, err
 //
 // TODO(mcuadros): move isBare to CloneOptions in v5
 func PlainClone(path string, isBare bool, o *CloneOptions) (*Repository, error) {
+	fmt.Errorf("Hiiiiiiii")
 	return PlainCloneContext(context.Background(), path, isBare, o)
 }
 
